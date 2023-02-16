@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "CloneDroidKnights2020"
-include ':app'
+include(":app")
