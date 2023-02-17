@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "888005435997",
+    "project_id": "clone-droid-knights",
+    "storage_bucket": "clone-droid-knights.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888005435997:android:5a6a8344228cf133b023b4",
+        "android_client_info": {
+          "package_name": "com.example.clonedroidknights2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888005435997-1vsp4iveqmjlsv834kag39p0rjovq6mh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.clonedroidknights2020",
+            "certificate_hash": "3cbff4924dad8ef3d7f8fce788ffae6a996009d8"
+          }
+        },
+        {
+          "client_id": "888005435997-ejli1dvftga60td884d03ihlkfp4gdgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB6hZPpH6AIx5gLhkCg89L1qFW95alz74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888005435997-ejli1dvftga60td884d03ihlkfp4gdgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

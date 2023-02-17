@@ -1,6 +1,12 @@
+import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
+    id("com.google.gms.google-services")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -45,7 +51,42 @@ dependencies {
     implementation(Dep.AndroidX.appcompat)
     implementation(Dep.AndroidX.constraintLayout)
     implementation(Dep.AndroidX.material)
+    implementation(Dep.AndroidX.browser)
+    implementation(Dep.AndroidX.swiperefresh)
+    implementation(Dep.AndroidX.Lifecycle.runtime)
+    implementation(Dep.AndroidX.Lifecycle.extensions)
+    implementation(Dep.AndroidX.Lifecycle.viewModel)
+    implementation(Dep.AndroidX.Lifecycle.livedata)
+    implementation(Dep.AndroidX.Navigation.fragment)
+    implementation(Dep.AndroidX.Navigation.ui)
+
+    implementation(Dep.Kotlin.Coroutines.core)
+    implementation(Dep.Kotlin.Coroutines.android)
+    implementation(Dep.Kotlin.Coroutines.playServices)
+    implementation(Dep.Kotlin.Coroutines.test)
+
+    implementation(platform(Dep.Firebase.bom))
+    implementation(Dep.Firebase.analytics)
+    implementation(Dep.Firebase.firestore)
+    implementation(Dep.Firebase.messaging)
+
+    implementation(Dep.Hilt.android)
+    kapt(Dep.Hilt.compiler)
+
+    implementation(Dep.Glide.glide)
+    implementation(Dep.Glide.compiler)
+
+    implementation(Dep.Google.gson)
+    implementation(Dep.Google.flexbox)
+    implementation(Dep.Google.PlayService.ossLicense)
+
     implementation(Dep.Test.junit)
     implementation(Dep.Test.junitExt)
     implementation(Dep.Test.espresso)
+
+    implementation(Dep.timber)
+}
+
+kapt {
+    correctErrorTypes = true
 }
