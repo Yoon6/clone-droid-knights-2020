@@ -74,7 +74,7 @@ dependencies {
     kapt(Dep.Hilt.compiler)
 
     implementation(Dep.Glide.glide)
-    implementation(Dep.Glide.compiler)
+    annotationProcessor(Dep.Glide.compiler)
 
     implementation(Dep.Google.gson)
     implementation(Dep.Google.flexbox)
