@@ -4,6 +4,9 @@
 
     <data>
 
+        <variable
+            name="vm"
+            type="com.example.clonedroidknights2020.ui.home.HomeViewModel" />
     </data>
 
     <LinearLayout
