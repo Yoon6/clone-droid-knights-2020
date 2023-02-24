@@ -1,7 +1,5 @@
 package com.example.clonedroidknights2020.ui.home
 
-import androidx.hilt.lifecycle.ViewModelInject
-import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -11,8 +9,10 @@ import com.example.clonedroidknights2020.data.EventHistory
 import com.example.clonedroidknights2020.data.Sponsor
 import com.example.clonedroidknights2020.ui.model.UiHomeModel
 import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class HomeViewModel @ViewModelInject constructor(): ViewModel() {
+@HiltViewModel
+class HomeViewModel @Inject constructor(): ViewModel() {
     private val sponsors = listOf(
         Sponsor("toss", "https://toss.im/", R.drawable.ic_sponsor_toss),
         Sponsor("헤이딜러", "https://dealer.heydealer.com/", R.drawable.ic_sponsor_heydealer),

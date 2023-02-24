@@ -56,8 +56,6 @@ object Dep {
     object Hilt {
         const val android = "com.google.dagger:hilt-android:2.44"
         const val compiler = "com.google.dagger:hilt-compiler:2.44"
-        const val viewModel = "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
-        const val viewModelCompiler = "androidx.hilt:hilt-compiler:1.0.0"
     }
 
     object Google {
