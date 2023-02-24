@@ -9,14 +9,15 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.clonedroidknights2020.BR
+import dagger.hilt.android.AndroidEntryPoint
 
-class BaseFragment<VM : ViewModel, B : ViewDataBinding>(
+open class BaseFragment<VM : ViewModel, B : ViewDataBinding>(
     @LayoutRes private val layoutResId: Int,
     private val viewModelClass: Class<VM>
 ) : Fragment(layoutResId) {
 
     protected val viewModel: VM by lazy {
-        ViewModelProvider(this).get(viewModelClass)
+        ViewModelProvider(this)[viewModelClass]
     }
     private lateinit var _binding: B
     protected val binding: B get() = _binding

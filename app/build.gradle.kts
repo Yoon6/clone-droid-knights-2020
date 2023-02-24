@@ -70,6 +70,8 @@ dependencies {
 
     implementation(Dep.Hilt.android)
     kapt(Dep.Hilt.compiler)
+    implementation(Dep.Hilt.viewModel)
+    kapt(Dep.Hilt.viewModelCompiler)
 
     implementation(Dep.Glide.glide)
     annotationProcessor(Dep.Glide.compiler)
