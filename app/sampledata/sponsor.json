@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "name": "toss",
+      "image": "@drawable/ic_sponsor_toss"
+    },
+    {
+      "name": "헤이딜러",
+      "image": "@drawable/ic_sponsor_heydealer"
+    },
+    {
+      "name": "카카오페이",
+      "image": "@drawable/ic_sponsor_kakaopay"
+    },
+    {
+      "name": "vcnc",
+      "image": "@drawable/ic_sponsor_vcnc"
+    }
+  ]
+}

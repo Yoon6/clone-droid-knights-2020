@@ -22,7 +22,7 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>(
     }
 
     private fun initObserver() {
-//        binding.homeRecyclerView.addItemDecoration()
+        binding.homeRecyclerView.addItemDecoration(HistoryItemDecoration())
     }
 
     private fun initView() {
